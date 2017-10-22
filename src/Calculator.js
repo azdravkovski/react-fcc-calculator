@@ -138,7 +138,7 @@ export default class Calculator extends Component {
         <p className="text-center">Made with 💪 by <a className="github" href="https://www.github.com/azdravkovski">Aleksandar Zdravkovski</a></p>
         <div className="container">
           <div className="keys">
-            <div className="display">{this.state.display}</div>
+            <div className="display">{parseFloat(this.state.display).toLocaleString()}</div>
             <a href="#" className="btn btn-default" onClick={() => this.handlePercentage()}>%</a>
             <a href="#" className="btn btn-default" onClick={() => this.handleSqrt()}>&radic;</a>
             <a href="#" className="btn btn-default" onClick={() => this.handleExpon()}><em>x</em><sup>2</sup></a>
